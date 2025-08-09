@@ -51,3 +51,18 @@ end
 for num in 1..5 do
     puts "hello " + num.to_s
 end
+
+# iterator
+nums = [1, 2, 3, 4, 5]
+
+nums.each do |num|
+    puts "hello " + num.to_s
+end
+
+(1..5).each do |num|
+    puts "hello " + num.to_s
+end
+
+5.times do |num|
+    puts "hello " + num.to_s
+end
