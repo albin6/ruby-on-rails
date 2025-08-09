@@ -40,3 +40,14 @@ while count < 5
     puts "hello " + count.to_s
     count += 1
 end
+
+#for in
+nums = [1, 2, 3, 4, 5]
+
+for num in nums do
+    puts "hello " + num.to_s
+end
+
+for num in 1..5 do
+    puts "hello " + num.to_s
+end
