@@ -1,0 +1,68 @@
+x = 10
+y = 'string'
+
+z = x + y
+
+puts z
+
+# The above code will raise an error because you cannot add an integer and a string.
+# To fix this, we can convert the string to an integer or vice versa.
+
+x = 10
+y = '5'  # Changed to a string that can be converted to an integer
+
+z = x + y.to_i  # Convert y to an integer before adding
+
+
+# Loop
+count = 0
+
+loop do
+    if count < 5
+        puts "hello " + count.to_s
+    end
+    count += 1
+    break if count >= 5
+end
+
+# until
+count = 0
+
+until count >= 5
+    puts "hello " + count.to_s
+    count += 1
+end
+
+# while
+count = 0
+
+while count < 5
+    puts "hello " + count.to_s
+    count += 1
+end
+
+#for in
+nums = [1, 2, 3, 4, 5]
+
+for num in nums do
+    puts "hello " + num.to_s
+end
+
+for num in 1..5 do
+    puts "hello " + num.to_s
+end
+
+# iterator
+nums = [1, 2, 3, 4, 5]
+
+nums.each do |num|
+    puts "hello " + num.to_s
+end
+
+(1..5).each do |num|
+    puts "hello " + num.to_s
+end
+
+5.times do |num|
+    puts "hello " + num.to_s
+end
