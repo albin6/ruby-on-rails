@@ -23,3 +23,16 @@ class Student < Person
         "I am studying."
     end
 end
+
+class Teacher < Person
+    attr_accessor :employee_id
+
+    def initialize(name, age, employee_id)
+        super(name, age)
+        @employee_id = employee_id
+    end
+
+    def teach
+        "I am teaching."
+    end
+end
