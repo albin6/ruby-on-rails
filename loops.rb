@@ -13,6 +13,8 @@ y = '5'  # Changed to a string that can be converted to an integer
 
 z = x + y.to_i  # Convert y to an integer before adding
 
+
+# Loop
 count = 0
 
 loop do
@@ -21,4 +23,20 @@ loop do
     end
     count += 1
     break if count >= 5
+end
+
+# until
+count = 0
+
+until count >= 5
+    puts "hello " + count.to_s
+    count += 1
+end
+
+# while
+count = 0
+
+while count < 5
+    puts "hello " + count.to_s
+    count += 1
 end
