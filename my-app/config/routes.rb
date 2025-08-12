@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get 'about', to: 'about#index'
-  get '/', to: 'main#index' # root to main#index
+  get '/', to: 'main#index', as: :root # root to main#index
+  get 'flash', to: 'flash#index'
 end
